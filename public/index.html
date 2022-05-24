@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .grid-container {
+            border-color: black;
+            border: 2px;
+            display: grid;
+            column-gap: 1px;
+            grid-template-columns: 40% 30% 30%
+            
+        }
+        #localvideo {
+            background: red;
+            
+        }
+
+        #remotevideo {background: yellow;
+        }
+
+        #btncntr{
+
+            background-color: aquamarine;
+        }
+        #bttn{
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    
+        <div>
+            <video src="" id="localvideo" autoplay muted></video>        
+        </div>
+    
+        <div>
+            <video src="" id="remotevideo" autoplay muted></video>        
+        </div>
+        <div>
+            <button id="start" onclick="getVideo()" type="button" >Web Cam On</button>
+            <button id="stop" onclick="stopBothVideoAndAudio(tracks)" type="button" >Web Cam off</button>
+            <button id="call" onclick="makeCall()" type="button" >call</button>
+            
+        </div>           
+                
+            
+    
+        
+    
+    
+    
+    <script src="mian.js">
+
+    </script>
+</body>
+</html>
